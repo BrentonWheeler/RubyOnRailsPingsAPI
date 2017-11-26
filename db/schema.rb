@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171125083854) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "pings", force: :cascade do |t|
     t.string "device_id"
     t.integer "epoch_time"
